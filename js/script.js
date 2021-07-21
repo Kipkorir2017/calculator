@@ -1,31 +1,36 @@
-// Addition
-var add = function(number1, number2) {
-    return number1 + number2;
-  };
-  var number1 = parseInt(prompt("Addition-"+"Enter a number:"));
-  var number2 = parseInt(prompt("Addition-"+"Enter another number:"));
-  alert(add(number1, number2));
-//   Subtraction
-var sub =function(number1,number2){
-    return number1 - number2;
-}
-var number1 =parseInt(prompt("Sub-"+"Enter a number:"));
-var number2 =parseInt(prompt("Sub-"+"Enter another number:"))
-var result = sub(number1,number2);
-alert(result);
-// multiplication
-var sub =function(number1,number2){
-    return number1 * number2;
-}
-var number1 =parseInt(prompt("Multiply-"+"Enter a number:"));
-var number2 =parseInt(prompt("Multiply-"+"Enter another number:"))
-var result = sub(number1,number2);
-alert(result);
-// Division
-var sub =function(number1,number2){
-    return number1 / number2;
-}
-var number1 =parseInt(prompt("Division-"+"Enter a number:"));
-var number2 =parseInt(prompt("Division-"+"Enter another number:"))
-var result = sub(number1,number2);
-alert(result);
+$(document).ready(function(){
+    $("#add").click(function(event){
+        var num1 =parseInt($("#calc1").val());
+        var num2 =parseInt($("#calc2").val());
+        var addition= (num1 + num2);
+        $("#results").text(addition);
+        event.preventDefault();
+    });
+});
+$(document).ready(function(){
+    $("#sub").click(function(event){
+        var num1 =parseInt($("#calc1").val());
+        var num2 =parseInt($("#calc2").val());
+        var subtraction= (num1 - num2);
+        $("#results").text(subtraction);
+        event.preventDefault();
+    });
+});
+$(document).ready(function(){
+    $("#multiply").click(function(event){
+        var num1 =parseInt($("#calc1").val());
+        var num2 =parseInt($("#calc2").val());
+        var multiplication= (num1 * num2);
+        $("#results").text(multiplication);
+        event.preventDefault();
+    });
+});
+$(document).ready(function(){
+    $("#division").click(function(event){
+        var num1 =parseInt($("#calc1").val());
+        var num2 =parseInt($("#calc2").val());
+        var division= (num1 + num2);
+        $("#results").text(division);
+        event.preventDefault();
+    });
+});

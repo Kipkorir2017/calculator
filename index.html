@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/script.js"></script>
+    <title>Document</title>
     <title>Calculator</title>
-</head>
-<body>
-    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script   src="js/jquery-3.6.0.js"></script> 
+    <script src="/js/script.js"></script> 
+     </head>
+     <body>
+         <div class="container">
+          <h1>Calculator</h1>
+          <form id="calc">
+              <div class="form-group"> <label for="add1"></label> <input id="calc1" placeholder="Enter First No:" class="form-control form" type="text"> </div>
+              <div class="form-group"> <label for="add2"></label> <input id="calc2" placeholder="Enter Second No:" class="form-control form" type="text"> </div> <br> <br>
+              <button id="add">+</button> 
+              <button id="sub">-</button> 
+              <button id="multiply">*</button> 
+              <button id="division">/</button> <br> <br>
+              <textarea name="" id="results"  placeholder="Results"></textarea>
+             
+              
+           </form>
+      </div>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.container{
+    background-color: aqua;
+    margin-top: 10px;
+    width: 50%;
+}
+form{
+    width: 50% ;
+}
+button{
+    width: 10%;
+}
