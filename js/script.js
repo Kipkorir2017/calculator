@@ -34,3 +34,14 @@ $(document).ready(function(){
         event.preventDefault();
     });
 });
+// // simplified
+// $(document).ready(function(){
+//     $()
+//     var ArithmeticSymbols=['add','sub','multiply','division'];
+//     ArithmeticSymbols.forEach(function(symbol){
+//         var inputs =$("#"+symbol).val();
+
+//         $("#"+symbol).text(inputs);
+//     })
+//     $("#results").show();
+// })
