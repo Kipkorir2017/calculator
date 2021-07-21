@@ -29,7 +29,7 @@ $(document).ready(function(){
     $("#division").click(function(event){
         var num1 =parseInt($("#calc1").val());
         var num2 =parseInt($("#calc2").val());
-        var division= (num1 + num2);
+        var division= (num1 / num2);
         $("#results").text(division);
         event.preventDefault();
     });
